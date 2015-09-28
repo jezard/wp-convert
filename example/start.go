@@ -10,7 +10,7 @@ package main
 //$ example > ../sample_output.txt
 
 import (
-	"fmt"
+	//"fmt"
 	"github.com/jezard/wp-tool"
 	"html/template"
 	"io"
@@ -77,7 +77,7 @@ func UploadHandler(w http.ResponseWriter, r *http.Request) {
 				http.Error(w, err.Error(), http.StatusInternalServerError)
 				return
 			}
-			fmt.Printf("%v\n", files[i].Header)
+			//fmt.Printf("%v\n", files[i].Header)
 			wp.Search_and_replace("C:/Users/Administrator/git-projects/jps-frontend/uploads/"+files[i].Filename, true)
 		}
 		//display success message.

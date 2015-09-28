@@ -1,2 +1,2 @@
-# fit
-Package to read and parse a Garmin .fit Activity file using  the Google Go (Golang) programming language
+# wp-tool - to run:
+$ example >  /c/go/src/github.com/jezard/wp-tool/output.xml
